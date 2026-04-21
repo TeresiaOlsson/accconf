@@ -1,4 +1,4 @@
-"""Module for ItemTypes and the registry."""
+"""Module for the registry."""
 
 import logging
 from typing import Optional
