@@ -14,7 +14,7 @@ from .base import ItemData, ConfigBackend
 logger = logging.getLogger(__name__)
 
 
-class JsonBackend(ConfigBackend):
+class JSONBackend(ConfigBackend):
     """
     JSON database. 
 

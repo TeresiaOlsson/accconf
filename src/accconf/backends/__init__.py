@@ -4,7 +4,6 @@ import os
 
 logger = logging.getLogger(__name__)
 
-# TODO: add json backend
 
 def _get_backend(backend):
     if backend == 'json':
@@ -20,7 +19,6 @@ def _get_backends():
         backends['json'] = _get_backend('json')
     except ImportError as ex:
         logger.debug('JSON backend unavailable: %s', ex)
-
     return backends
 
 
