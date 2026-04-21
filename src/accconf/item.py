@@ -15,7 +15,7 @@ class BaseItem(BaseModel):
     name: str = Field(description="Name for the instance.")
 
     # Attributes for to object creation
-    class_name: str = Field(description="Python class for creation", alias="class")
+    class_name: str = Field(description="Python class for creation")
     args: list[Any] = Field(default_factory=list)
     kwargs: dict[str, Any] = Field(default_factory=dict)
 
